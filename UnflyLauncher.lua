@@ -8,11 +8,15 @@ env.UnflySplashActive = true
 local SupportedGames = {
     [142823291] = {
         Name = "Murder Mystery 2",
-        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/Unfly_mm2.lua?token=GHSAT0AAAAAAENKIYZ4S5HMJMKLGG4NM5CS2XFSFLQ"
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/Unfly_mm2.lua?token=GHSAT0AAAAAAENKIYZ4M3JCJVCMA6KVKDOO2XFVGBQ"
     },
     [14437001043] = {
         Name = "Residence Massacre",
-        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua?token=GHSAT0AAAAAAENKIYZ5RMS2QZ6FYXI5PBWU2XFR66A"
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua?token=GHSAT0AAAAAAENKIYZ4ZZUJI5E44NQ5XGOC2XFVFYQ"
+    },
+    [14896802601] = {
+        Name = "Residence Massacre",
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua?token=GHSAT0AAAAAAENKIYZ4ZZUJI5E44NQ5XGOC2XFVFYQ"
     }
 }
 
