@@ -12,7 +12,7 @@ local SupportedGames = {
     },
     [14437001043] = {
         Name = "Residence Massacre",
-        ScriptUrl = "https://raw.githubusercontent.com/YourUser/YourRepo/main/residence_massacre.lua"
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua?token=GHSAT0AAAAAAENKIYZ5RMS2QZ6FYXI5PBWU2XFR66A"
     }
 }
 
