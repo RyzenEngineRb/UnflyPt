@@ -8,7 +8,7 @@ env.UnflySplashActive = true
 local SupportedGames = {
     [142823291] = {
         Name = "Murder Mystery 2",
-        ScriptUrl = "https://raw.githubusercontent.com/YourUser/YourRepo/main/mm2.lua"
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/Unfly_mm2.lua?token=GHSAT0AAAAAAENKIYZ4S5HMJMKLGG4NM5CS2XFSFLQ"
     },
     [14437001043] = {
         Name = "Residence Massacre",
