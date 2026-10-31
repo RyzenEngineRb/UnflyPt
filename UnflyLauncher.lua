@@ -10,6 +10,7 @@ local SupportedGames = {
         Name = "Murder Mystery 2",
         ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/Unfly_mm2.lua"
     },
+    -- Residence Massacre (lobby / worlds)
     [14437001043] = {
         Name = "Residence Massacre",
         ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua"
@@ -17,7 +18,15 @@ local SupportedGames = {
     [14896802601] = {
         Name = "Residence Massacre",
         ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua"
-    }
+    },
+    [16667550979] = {
+        Name = "Residence Massacre",
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua"
+    },
+    [140260816701736] = {
+        Name = "Residence Massacre",
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua"
+    },
 }
 
 local TweenService = game:GetService("TweenService")
