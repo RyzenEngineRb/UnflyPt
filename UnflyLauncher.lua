@@ -35,6 +35,10 @@ local SupportedGames = {
         Name = "Residence Massacre",
         ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/ResidenceHorror.lua"
     },
+    [18687417158] = {
+        Name = "Forsaken",
+        ScriptUrl = "https://raw.githubusercontent.com/RyzenEngineRb/Script.lua/refs/heads/main/UnflyFs.lua"
+    },
 }
 
 local TweenService = game:GetService("TweenService")
