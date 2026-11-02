@@ -4,19 +4,15 @@ do
 	local g = (getgenv and getgenv()) or _G
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
-	pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_7_5') end end)
 	local LP = Players.LocalPlayer
-
 	local API = "https://unflytm.vercel.app/api"
 	local LOADER_URL = "https://raw.githubusercontent.com/RyzenEngineRb/UnflyProject/refs/heads/main/UnflyLoader.lua"
 	local KEYFILE = "UnflyProject/key.txt"
 	local MSG = "похоже вы не получили ключ):\nзагрузите лоудер нажмите гет кей и получить ключ на сайте!"
-	local TAG = "UNFLY_LAUNCHER_SESSION_V2"
 
 	local function trim(s)
 		return (tostring(s or ""):match("^%s*(.-)%s*$")) or ""
 	end
-
 	local function http(url)
 		local ok, body = pcall(function()
 			if syn and syn.request then return syn.request({ Url = url, Method = "GET" }).Body end
@@ -26,13 +22,11 @@ do
 		end)
 		return ok and body or nil
 	end
-
 	local function encode(s)
 		s = tostring(s or "")
 		if HttpService.UrlEncode then return HttpService:UrlEncode(s) end
 		return (s:gsub("([^%w%-_%.~])", function(c) return string.format("%%%02X", string.byte(c)) end))
 	end
-
 	local function readKey()
 		local k = trim(g.__unfly_key)
 		if k ~= "" then return k end
@@ -43,10 +37,8 @@ do
 				if ok2 then return trim(data) end
 			end
 		end
-		pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_6_43') end end)
 		return ""
 	end
-
 	local function saveKey(k)
 		k = trim(k)
 		if k == "" then return end
@@ -58,7 +50,6 @@ do
 			end)
 		end
 	end
-
 	local function checkKey(key)
 		key = trim(key)
 		if key == "" then return false end
@@ -71,11 +62,9 @@ do
 		end
 		return string.lower(tostring(body)):find('"ok":true', 1, true) ~= nil
 	end
-
 	local function openLoader()
 		warn(MSG)
 		local src = http(LOADER_URL)
-		pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_5_74') end end)
 		if not src or #tostring(src) < 40 then
 			pcall(function() LP:Kick(MSG) end)
 			error(MSG, 0)
@@ -93,16 +82,15 @@ do
 	if not (key ~= "" and checkKey(key)) then
 		openLoader()
 	end
-
 	saveKey(key)
 	g.__unfly_ok = true
 	g.__unfly_from_launcher = true
 	g.__unfly_key = trim(key)
 	g.__unfly_session = os.time()
-	g.__unfly_authed = true
-	g.__unfly_tag = TAG
-	print("[UnflyLauncher] key ok — session for scripts")
+	print("[UnflyLauncher] key ok")
 end
+
+
 
 local env = (getgenv and getgenv()) or shared or _G
 
@@ -150,7 +138,6 @@ local SupportedGames = {
 
 local TweenService = game:GetService("TweenService")
 local HttpService   = game:GetService("HttpService")
-pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_4_148') end end)
 local Players        = game:GetService("Players")
 
 local LocalPlayer = Players.LocalPlayer
@@ -199,7 +186,6 @@ local ScreenGui = new("ScreenGui", {
     DisplayOrder = 1000,
     IgnoreGuiInset = true,
 })
-pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_3_196') end end)
 ScreenGui.Parent = PlayerGui
 
 local Main = new("Frame", {
@@ -264,7 +250,6 @@ task.spawn(function()
         local data = game:HttpGet(AVATAR_URL)
         local fileName = "UnflySplashAvatar.jpg"
         writefile(fileName, data)
-        pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_2_260') end end)
         return getcustomasset(fileName)
     end)
     if ok and result then
@@ -340,7 +325,6 @@ do
         dot:SetAttribute("Order", i)
         dot.Parent = Spinner
     end
-    pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_1_335') end end)
 end
 
 task.spawn(function()
@@ -370,7 +354,6 @@ for _, label in ipairs(Main:GetChildren()) do
         tween(label, TweenInfo.new(0.4), { TextTransparency = 0 })
     end
 end
-pcall(function() local _g=(getgenv and getgenv() or _G) if _g.__unfly_guard then _g.__unfly_guard('UnflyLauncher_0_364') end end)
 
 local function closeSplash()
     tween(Main, TweenInfo.new(0.5), { BackgroundTransparency = 1 })
